@@ -1,7 +1,6 @@
 package com.blogspot.pbetkier.strings;
 
 import com.google.common.base.Splitter;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -33,7 +32,7 @@ public class SplitterTest {
     }
 
     @Test
-    @Ignore
+//    @Ignore
     public void quizHowWouldJDKSplitBehave() {
         // given
         String toSplit = ",a,,b,";
@@ -42,11 +41,11 @@ public class SplitterTest {
         String[] split = toSplit.split(",");
 
         // then
-        assertThat(split).containsExactly("", "a", "", "b", ""); // A (same as Splitter)
+//        assertThat(split).containsExactly("", "a", "", "b", ""); // A (same as Splitter)
         assertThat(split).containsExactly("", "a", "", "b");     // B
-        assertThat(split).containsExactly("a", "", "b");         // C
-        assertThat(split).containsExactly("a", null, "b");       // D
-        assertThat(split).containsExactly("a", "b");             // E
+//        assertThat(split).containsExactly("a", "", "b");         // C
+//        assertThat(split).containsExactly("a", null, "b");       // D
+//        assertThat(split).containsExactly("a", "b");             // E
     }
 
     @Test
